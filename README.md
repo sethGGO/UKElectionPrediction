@@ -1,7 +1,7 @@
 # UKElectionPrediction
 # **Abstract**
 
-![](RackMultipart20210112-4-ahg56g_html_f16e5fb295dbf71c.gif)
+![](RackMultipart20210112-4-117sfur_html_f16e5fb295dbf71c.gif)
 
 Predicting UK Election Outcome using Political News Sentiment and Constituency Socioeconomic Conditions
 
@@ -23,11 +23,11 @@ University of Warwick
 
 September 2020
 
-In this project I aim to be able to accurately predict the outcome of UK elections by predicting what party wins in the various Westminster Parliamentary constituencies in England. This will be done using data from news sites and blogs as well as socioeconomic conditions in each constituency around England and derive relationships between these ![](RackMultipart20210112-4-ahg56g_html_36e25db06c5e3e9b.jpg) data sources and election results with the use of machine learning. To do this, I am going to make use of various classification models such as AdaBoost, Random Forest, Decision Tree and Support Vector Machine.
+In this project I aim to be able to accurately predict the outcome of UK elections by predicting what party wins in the various Westminster Parliamentary constituencies in England. This will be done using data from news sites and blogs as well as socioeconomic conditions in each constituency around England and derive relationships between these ![](RackMultipart20210112-4-117sfur_html_36e25db06c5e3e9b.jpg) data sources and election results with the use of machine learning. To do this, I am going to make use of various classification models such as AdaBoost, Random Forest, Decision Tree and Support Vector Machine.
 
 **Keywords** - Classification, Machine Learning, Natural Language Processing, Sentiment Analysis, Correlation, Elections, Politics, Data Mining.
 
-![](RackMultipart20210112-4-ahg56g_html_1d1d70b63fd8e21d.gif)
+![](RackMultipart20210112-4-117sfur_html_1d1d70b63fd8e21d.gif)
 
 I would like to thank and express my deepest gratitude to Dr. Gihan Mudalige for supervising and supporting the development of this project.
 
@@ -44,10 +44,22 @@ I would like to thank and express my deepest gratitude to Dr. Gihan Mudalige for
 1. **Literature Review 5** 2.1 Internet Effect on Elections 5 2.2 Web Scraping 5 - 2.2.1. Application Programming Interfaces 6 - 2.2.2 Screen Scraping 7 2.3. Election Prediction 7 2.4 Machine Learning for Election Prediction 8 2.5. NLP for Election Prediction 10
 
 1. **Project Management 12** 3.1 Timeline 12 3.2 Risk Assessment 14 3.3 Coordination with Supervisor 16 3.4 Technical Decisions 16
-2. **Methodology 17** 4.1 Political News Data 18 - 4.1.1 Conservative Leader News 19 - 4.1.2 Conservative Party News 21 - 4.1.3 Labour Leader News 21 - 4.1.4 Labour Party News 22 4.2 Sentiment Analysis 22 4.3 Constituency Socioeconomic Conditions Data 23 - 4.3.1 Proportion Owning House 24 - 4.3.2 Age Distribution 24 - 4.3.3Proportion 25 - 4.3.4 Percentage of Students Achieving 5A\*-C Grades at GCSE 25 - 4.3.5 Median House Price Born in the UK 25 - 4.3.6 Brexit Vote 25 - 4.3.7 Median Wage 25 4.4 Election Result Data 26 4.5 Preprocessing 26 - 4.5.1 Data Quality Assessment 26 - 4.5.2 Inconsistent Values 27 - 4.5.3 Feature Encoding 27 4.6 Training 28 4.7 Evaluation 28
-3. **Implementation and Results**
-4. **Testing**
-5. **Conclusion**
+2. **Methodology 17** 4.1 Political News Data 18 - 4.1.1 Conservative Leader News 19 - 4.1.2 Conservative Party News 21 - 4.1.3 Labour Leader News 21 - 4.1.4 Labour Party News 22 4.2 Sentiment Analysis 22 4.3 Constituency Socioeconomic Conditions Data 23 - 4.3.1 Proportion Owning House 24 - 4.3.2 Age Distribution 24 - 4.3.3Proportion 25 - 4.3.4 Percentage of Students Achieving 5A\*-C Grades at GCSE 25 - 4.3.5 Median House Price Born in the UK 25 - 4.3.6 Brexit Vote 25 - 4.3.7 Median Wage 25 4.4 Election Result Data 26 4.5 Preprocessing 26 - 4.5.1 Data Quality Assessment 26 - 4.5.2 Inconsistent Values 27 - 4.5.3 Feature Encoding 27 4.6 Model 28 - 4.6.1 Decision Tree Classification 29 - 4.6.2Random Forest Classification 30 - 4.6.3AdaBoost Classification 32 - 4.6.4 Support Vector Machine Classification 33 4.7 Training 34 - 4.7.1  K-Fold Cross Validation 34 4.8 Evaluation 35 - 4.8.1 Classification Accuracy 36 - 4.8.2 Confusion Matrix 37- 4.8.3 Precision 37- 4.8.4 Recall 37 - 4.8.5 F1 Score 37- 4.8.6 AUC ROC Curve 38
+3. **Implementation and Results 40** 5.1 Modules and Packages 40 5.2 Preprocessing 41 5.3 K Fold Cross Validation 42 5.4 Decision Tree Model 43 - 5.4.1 Training 43 - 5.4.2 Evaluation 44 5.5 Random Forest Model 46 - 5.5.1 Training 46 - 5.5.2 Evaluation 46 5.6 AdaBoostModel 48 - 5.6.1 Training 48 - 5.6.2 Evaluation 48 5.7 SVMModel 50 - 5.7.1 Training 50 - 5.7.2 Evaluation 51 5.8 Overall Evaluation 53
+4. **Testing 54** 6.1 2005 Elections 54 6.2 2010 Elections 56 6.3 2015 Elections 59 6.4 2017 Elections 61 6.5 2019 Elections 63
+5. **Conclusion 66** 7.1 Future Work 66 7.2 Conclusion 66
+
+**Appendix A Decision Tree Model 70**
+
+**Appendix B Random Forest Model 73**
+
+**Appendix C AdaBoost Model**  **76**
+
+**Appendix D SVM Model**  **79**
+
+**Appendix E AdaBoost Model for Election() 82**
+
+**Appendix F Web Scraping and NLP**  **86**
 
 # **Chapter
 # 1**
@@ -184,7 +196,7 @@ Due to the flexibility of the timeline, the initial timeline had multiple differ
 
 Figure 3.1 Initial Project Timeline as Submitted in Research Proposal
 
-Figure 3.2 Project Ti ![](RackMultipart20210112-4-ahg56g_html_92fb7cb2ca9006ae.png) ![](RackMultipart20210112-4-ahg56g_html_40e3cd036ff5c5cf.png) ![](RackMultipart20210112-4-ahg56g_html_b43621397f4755bd.png)meline as at Presentation date
+Figure 3.2 Project Ti ![](RackMultipart20210112-4-117sfur_html_92fb7cb2ca9006ae.png) ![](RackMultipart20210112-4-117sfur_html_40e3cd036ff5c5cf.png) ![](RackMultipart20210112-4-117sfur_html_b43621397f4755bd.png)meline as at Presentation date
 
 Figure 3.3 Project Timeline as at Interim Report Submission
 
@@ -236,21 +248,7 @@ For this project, the kanban methodology has been adopted as well as parts of th
 
 # **Methodology**
 
-![](RackMultipart20210112-4-ahg56g_html_115173aafb660b0c.gif) ![](RackMultipart20210112-4-ahg56g_html_d609edff8f8e3c65.gif) ![](RackMultipart20210112-4-ahg56g_html_4739d8a83158decb.gif) ![](RackMultipart20210112-4-ahg56g_html_b714ad4ab738886c.gif) ![](RackMultipart20210112-4-ahg56g_html_b2e812369217370e.gif) ![](RackMultipart20210112-4-ahg56g_html_7902d4d968377a3a.gif) ![](RackMultipart20210112-4-ahg56g_html_7902d4d968377a3a.gif) ![](RackMultipart20210112-4-ahg56g_html_bb881356c96768b5.gif) ![](RackMultipart20210112-4-ahg56g_html_ad17b93b71f978f3.gif)
- ![](RackMultipart20210112-4-ahg56g_html_eabaabd6ba48450b.gif) ![](RackMultipart20210112-4-ahg56g_html_e2bfaa0655d60918.gif) ![](RackMultipart20210112-4-ahg56g_html_3c8534944571f9d7.gif) ![](RackMultipart20210112-4-ahg56g_html_fecf38d3c6a25a6c.gif)
-
-Evaluate
-
-**Model**
-
-Election Result
-
-Constituency
-
-Sentiment Analysis
-
-Political News
-
+![](RackMultipart20210112-4-117sfur_html_7fa45864d4712a18.gif)
 In this chapter, the methodology which will be used to achieve building accurate models to predict UK elections by predicting the winner in each constituency in England and then overall in the UK using the party with the highest sum of constituencies won. There are several components of the methodology used to achieve a functional model and these will be looked into in detail.. The following sections are required to achieve the creation of an efficient model for this project:
 
 - Political News Data
@@ -327,7 +325,11 @@ For each election, four different datasets were created with each focusing on a 
 
 Below is a sample of one of the csv datasets which was scraped from google news data. The left column contains the news data while the right column contains the time period.
 
-![](RackMultipart20210112-4-ahg56g_html_f966c4a6f218cffd.gif)
+Figure 4.2. Subset of Labour Party 2017 News Data
+
+**4.1.1 Conservative Leader News**
+
+![](RackMultipart20210112-4-117sfur_html_f966c4a6f218cffd.gif)
 
 | **News Stories** | **Dates** |
 | --- | --- |
@@ -341,10 +343,6 @@ Below is a sample of one of the csv datasets which was scraped from google news 
 | **Why the Rise of Corbyn&#39;s Labour Party Should Worry the West. In the days since**  **British Prime Minister Theresa May&#39;s disastrous snap election, the Labour Party**  **and its leader, Jeremy Corbyn, have been taking in the sheer ...** | **3A6%2F07%2F2017** |
 | **Corbyn critics win election to Labour parliamentary committee. Ian Lavery, the**  **Labour party chairman, attempted to calm concerns among MPs on Friday, telling**** the Mirror: &quot;I don&#39;t see deselection as the way forward.&quot;. **|** 3A6%2F07%2F2017** |
 | **The roar of the Glastonbury crowd is not enough – Labour .... If there were an**  **extended metaphor for the state of the Labour Party since the snap election, it**  **would be the Glastonbury Festival. I was there this year and heard ...** | **3A6%2F07%2F2017** |
-
-Figure 4.2. Subset of Labour Party 2017 News Data
-
-**4.1.1 Conservative Leader News**
 
 This dataset consisted of top news stories of the conservative party candidate running for the position of Prime Minister of the UK. As the person running for this position may be different in each election, the candidates name is used as the keyword for retrieving the top news stories concerning them within the 6 month period pre elections. For each of the elections used in this projects these are the party leaders for the Conservative Party:
 
@@ -428,8 +426,8 @@ Figure 4.4 Subset of Constituency Socioeconomic Conditions Dataset part 2
 
 **4.3.1 Proportion Owning House**
 
-![](RackMultipart20210112-4-ahg56g_html_33cdfb87e25a96bd.gif)
- ![](RackMultipart20210112-4-ahg56g_html_96ebc3cfee2e7fb.gif)
+![](RackMultipart20210112-4-117sfur_html_33cdfb87e25a96bd.gif)
+ ![](RackMultipart20210112-4-117sfur_html_96ebc3cfee2e7fb.gif)
 
 | **Constituency** | **House median**
  | **Wage Median**
@@ -492,7 +490,7 @@ Figure 4.5 Subset of 2019 Election Results
 
 ### **4.5 Preprocessing**
 
-![](RackMultipart20210112-4-ahg56g_html_94018f32351bc5e8.gif)
+![](RackMultipart20210112-4-117sfur_html_94018f32351bc5e8.gif)
 
 | **Constituency** | **Party** |
 | --- | --- |
@@ -526,7 +524,7 @@ For my election result data the party in different elections were spelt differen
 Feature encoding is basically performing transformations on the data such that it can be easily accepted as input for machine learning algorithms while still retaining its original meaning. For nominal data a one to one mapping can be done. In the election result data, the winning party is nominal data and it has been preprocessed using the label encoder to become a numerical value. The political parties and their encoded values are:
 
 - &#39;Con&#39; - 0
-- &#39;Green&#39; - 1
+- &#39;Green&#39; -1
 - &#39;KHHC&#39; - 2
 - &#39;LD&#39; - 3
 - &#39;Lab&#39; - 4
@@ -534,21 +532,530 @@ Feature encoding is basically performing transformations on the data such that i
 - &#39;Spkr&#39; - 6
 - &#39;UKIP&#39; - 7
 
-### **4.6 Training**
+### **4.6 Model**
 
-### **4.7 Evaluation**
+A machine learning model is a file that has been trained to recognise certain types of patterns and the model can either be supervised or unsupervised. If the model is supervised,the model is trained over a set of data, providing it an algorithm that it can use to reason over and learn from those data. As seen in figure 4.6 it involves learning a function that maps an input to an output based on example input-output pairs. Supervised learning models ar ![](RackMultipart20210112-4-117sfur_html_bb93c547a8f295e3.jpg)esub-categorised as either a regression or classification model[26].
+
+Figure 4.6 Supervised Learning Model Diagram
+
+For my project the classification model is being used which is a subcategory of the supervised learning model. A classification model tries to draw some conclusion from the input values given for training. It will predict the class labels/categories for the new data as seen in Figure 4.7. Of the various types of classification models, here are the four types that were utilised in my project.
+
+Figure 4.7 Classification Model Diagram
+
+**4.6.1 Decision Tree Classification**
+
+Decision Tree Classifier is a Supervised Mach ![](RackMultipart20210112-4-117sfur_html_4020656d00b207.jpg) ![](RackMultipart20210112-4-117sfur_html_e5049b489c32262c.jpg)ine Learning where the data is continuously split according to a certain parameter.
+
+Figure 4.8 Decision Tree Classifier
+
+As seen in Figure 4.8, decision trees are made up of:
+
+- Nodes - Test for the value of a certain attribute.
+- Branches - Correspond to the outcome of a test and connect to the next node or leaf.
+- Leaves - Terminal nodes that predict the outcome.
+
+For classification using decision trees, the decision variable is categorical. The tree is constructed through a procedure known as binary recursive partitioning. This process involves splitting the data into partitions iteratively, and then further dividing it up on each of the branches.
+
+Advantages:
+
+- Keeps out insignificant features.
+- Very fast at classifying unknown records.
+- Easy to interpret for small-sized trees.
+
+Disadvantages:
+
+- Easy to overfit.
+- Decision tree models are often biased toward splits on features having a large number of levels.
+- Small changes in the training data can result in large changes to decision logic.
+
+**4.6.2 Random Forest Classification**
+
+Random forest, consists of a large number of individual decision trees that operate as an ensemble. Each individual tree in the random forest spits out a class prediction and the class with the most votes becomes our model&#39;s prediction.
+
+Figure 4.9 Random Forest Classifier
+
+The key for the random forest to work is having low correlation between trees as this will ensure ensemble prediction are greater than individual predictions. This is so because the trees end up protecting themselves from individual inaccuracy so if certain trees end up being wrong, others will be right and as a group they wil ![](RackMultipart20210112-4-117sfur_html_d5a7a9f5610378ae.jpg)l make the right decision.
+
+Advantages:
+
+- Great with high dimensional data.
+- It has methods for balancing error in class population unbalanced data sets.
+- It has low bias and average variance.
+
+Disadvantages:
+
+- Random forest models are not all that interpretable.
+- There is a tendency for it to overfit, so tuning hyperparameters is advised.
+
+**4.6.3 AdaBoost Classification**
+
+Boosting is an ensemble technique that attempts to create a strong classifier from a number of weak classifiers. Boosting is an ensemble technique that attempts to create a strong classifier from a number of weak classifiers. AdaBoost works in the following steps:
+
+- Initially, AdaBoost selects a training subset randomly.
+- It iteratively trains the AdaBoost machine learning model by selecting the training set based on the accurate prediction of the last training.
+- It assigns the higher weight to wrong classified observations so that in the next iteration these observations will get ![](RackMultipart20210112-4-117sfur_html_e75a441a22db0fe4.jpg)the high probability for classification.
+- Also, It assigns the weight to the trained classifier in each iteration according to the accuracy of the classifier. The more accurate classifier will get high weight.
+- This process iterate until the complete training data fits without any error or until reached to the specified maximum number of estimators.
+- To classify, perform a &quot;vote&quot; across all of the learning algorithms you built.
+
+Figure 4.10 AdaBoost Classifier
+
+Advantages:
+
+- It iteratively corrects the mistakes of the weak classifier and improves accuracy by combining weak learners.
+- AdaBoost is not prone to overfitting.
+- Many base classifiers can be used with AdaBoost.
+
+Disadvantages:
+
+- AdaBoost is sensitive to noise data.
+- It is highly affected by outliers because it tries to fit each point perfectly.
+
+**4.6.4 Support Vector Machine Classification**
+
+In the SVM algorithm, we plot each data item as a point in n-dimensional space (where n is number of features you have) with the value of each feature being the value of a particular coordinate[29]. Then, we perform classification by finding a hyperplane or a boundary between the two classes of data that maximises the margin between the two classes. There are many planes that can separate the two classes, but only one plane can maximise the margin or distance between the classes. ![](RackMultipart20210112-4-117sfur_html_d93fd4df25ff79cc.jpg)
+
+Figure 4.11 SVM Classifier
+
+As seen in Figure 4.11 SVM classifier chooses the right hyperplane as its aim is to maximise the margin.
+
+Advantages:
+
+- It is effective in high dimensional spaces.
+- It works really well with a clear margin of separation
+- It is memory efficient as it uses subset of training points in the decision function
+
+Disadvantages:
+
+- Large datasets require long training times therefore reducing performance
+- It doesn&#39;t perform very well, when the data set has a lot of noise
+
+### **4.7 Training**
+
+The process of training involves providing the machine learning model with data to learn from. This will be done by dividing the data into two parts which are the training set and test set. The training set will be used to fit and tune the model while the test set which will be unseen by the model till after the training is done will be used to evaluate the model.
+
+**4.7.1  K-Fold Cross Validation**
+
+K-Fold Cross Validation consists in splitting the data into K partitions of equal size. For each partition i, the model is trained with the remaining K-1 partitions and it is evaluated on partition i. The final score is the average of the K scored obtained. Figure 4.12 shows a diagram of how this works and how the data is first split into folds and in each split one of the folds becomes the test data while the remaining remain training data.
+
+For this project I will be using 90% of my dataset for training and 10% for testing while I would use the K-Fold Cross Validation with 10 folds.
+
+![](RackMultipart20210112-4-117sfur_html_c6f8b78dfcd7b475.jpg)
+
+Figure 4.12 K-Fold Cross Validation
+
+### **4.8 Evaluation**
+
+Evaluating a classification model is an integral part of the model development process as it helps to know which model works well with the data and also to know which model will work best in the future. Evaluation can be done using various metrics and for this project I make use of:
+
+**4.8.1 Classification Accuracy**
+
+Classification accuracy shows how many of the prediction are correct out of the total predictions made.
+
+This represents how good a model is in some cases but in cases where the dataset has an uneven distribution it is not a good representative of the model performance.
+
+**4.8.2 Confusion Matrix**
+
+A confusion matrix is not necessarily a metric to measure model performance but it gives insight in order to produce other classification metrics such as recall and precision. Confusion matrix goes deeper than classification accuracy by showing the correct and incorrect predictions on each class. ![](RackMultipart20210112-4-117sfur_html_16be3c22049535d2.jpg)
+
+Figure 4.13 Confusion Matrix
+
+The confusion matrix is made up of:
+
+- True Positive: Positive class is predicted as positive. (Correct)
+- False Positive: Negative class is predicted as positive. (Wrong)
+- True Negative: Negative class is predicted as negative. (Correct)
+- False Negative: Positive class is predicted as negative. (Wrong)
+
+The aim is for all predictions to be correct and therefore fall within the true positive or true negative class. False positive is also knowns as type I error while false negative is also known as type II error.
+
+**4.8.3 Precision**
+
+Precision takes it a step further in accuracy allowing more specific understanding in model performance. It measures how good the model is when the predictions are positive. Precision uses values from the confusion matrix to calculate this. The formula to get its value is:
+
+**4.8.4 Recall**
+
+Recall just like precision takes it one step further in accuracy to understand the model performance. For recall, it measures how good our model is at correctly predicting positive classes. It also uses values from the confusion matrix to calculate the value and the formula is:
+
+**4.8.5 F1 Score**
+
+F1 Score combines both precision and recall to a single number. It is the weighted average of precision and recall. It is a more functional measure for problems with an uneven class distribution than accuracy and this is because both false positive and false negatives are taken into consideration. The F1 score lies between 1 and 0 with one being the best value and 0 being the worst value. The F1 Score formula is:
+
+**4.8.6 AUC ROC Curve**
+
+ROC curve summarises the performance of the model at different threshold values by combining confusion matrices at all threshold values. X axis of ROC curve is the true positive rate (sensitivity) and y axis of the ROC curve is the false positive rate (1- specificity).
+
+True Positive Rate(Sensitivity) Formula:
+
+False Positive Rate(1-Specificity) Formula:
+
+![](RackMultipart20210112-4-117sfur_html_786032e8297d24e6.jpg)
+
+Figure 4.14 ROC Curve
+
+If the threshold is set to 0, the model predicts all samples as positive. In this case, TPR (sensitivity) is 1. However, FPR(1-specificity) is also 1 because there is no negative prediction. If the threshold is set to 1, both TPR and FPR become 0. Hence, it is not a good choice to set the threshold to 0 or 1. We aim to increase the true positive rate (TPR) while keeping false positive rate (FPR) low. As we can see on the ROC curve, as TPR increases, FPR also increases. So it comes down to decide how many false positives we can tolerate[30].
+
+AUC is the area under the ROC curve between (0,0) and (1,1). AUC fundamentallycombines the performance of the model at all threshold values. The best possible value of AUC is 1 which signifies a perfect classifier. The classifier gets better as the AUC gets closer to 1.
+
+In the figure below, classifier A is better than classifier B. ![](RackMultipart20210112-4-117sfur_html_d7d49c59179ad8a9.jpg)
+
+Figure 4.15 Comparing AUC in ROC Curve
 
 # **Chapter 5**
 
 # **Implementation and Results**
 
+This chapter gives an in depth descriptions of what was done to implement the election prediction model. This was implemented using Python 3 as Python has a robust collection of machine learning packages which are necessary for me to make use of machine learning. As I have used four different models, I will discuss how they were implemented and evaluate the results each model brings.
+
+### **5.1 Modules and Packages**
+
+Various python packages were used to implement features and achieve final model results. They are:
+
+- Tweepy[31] - Tweepy is a python library for accessing the Twitter API. The API class provides access to the entire twitter RESTful API methods. Each method can accept various parameters and return responses.
+
+- NLTK[32] - NLTK is a leading platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength NLP libraries.
+
+- BeautifulSoup[33] - Beautiful Soup is a library that makes it easy to scrape information from web pages. It sits atop an HTML or XML parser, providing Pythonic idioms for iterating, searching, and modifying the parse tree.
+- Scikit-Learn[34] - Scikit-learn is an open source machine learning library that supports supervised and unsupervised learning. It also provides various tools for model fitting, data preprocessing, model selection and evaluation, and many other utilities.
+- Matplotlib[35] - Matplotlib is a comprehensive library for creating static, animated, and interactive visualisations in Python.
+- Pandas[36] - Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the [Python](https://www.python.org/) programming language.
+- Numpy[37] - NumPy is a python library used for working with arrays. It also has functions for working in domain of linear algebra, fourier transform, and matrices.
+- Seaborn[38] - Seaborn is a library for making statistical graphics in Python. It builds on top of [matplotlib](https://matplotlib.org/) and integrates closely with [pandas](https://pandas.pydata.org/) data structures. Seaborn helps you explore and understand your data. Its plotting functions operate on dataframes and arrays containing whole datasets and internally perform the necessary semantic mapping and statistical aggregation to produce informative plots. Its dataset-oriented, declarative API lets you focus on what the different elements of your plots mean, rather than on the details of how to draw them.
+- Geopandas[39] - GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by [pandas](http://pandas.pydata.org/) to allow spatial operations on geometric types. Geometric operations are performed by [shapely](https://shapely.readthedocs.io/). Geopandas further depends on [fiona](https://fiona.readthedocs.io/) for file access and [descartes](https://pypi.python.org/pypi/descartes) and [matplotlib](http://matplotlib.org/) for plotting.
+
+### **5.2 Preprocessing**
+
+To preprocess my data in order to make it more simplified for the model, I made use of :
+
+- MinMax Scaler - This transforms features by scaling all of the features to a certain range. Each feature us scaled and translated individually in a certain way it lies within the range of the set. Formula for this to be implemented is:
+
+X\_std = (X - X.min(axis=0)) / (X.max(axis=0) - X.min(axis=0))
+
+X\_scaled = X\_std \* (max-min) +min
+
+To utilise this in my project I had the following code:
+
+1 min\_max\_scaler = preprocessing.MinMaxScaler()
+
+2 x\_scaled = min\_max\_scaler.fit\_transform(unscaled.values)
+
+3 scaled\_values = pd.DataFrame(x\_scaled)
+
+- Label Encoder - This is used to convert categorical data, or text data, into numbers, which our predictive models can better understand. In my dataset I used it to transform the y data which is the winning political party from text to a number.
+
+1 le = preprocessing.LabelEncoder()
+
+2 master[&#39;result&#39;] = le.fit\_transform(master.result.values)
+
+This transformed the political parties from text data to numerical data as shown below:
+
+- Conservative Party - 0
+- Liberal Democrats Party - 1
+- Labour Party - 2
+
+### **5.3 K Fold Cross Validation**
+
+For all my models I made use of the K Fold cross validation. This was done using the sklearn library. I used a 10 split K folks with the random state being none and shuffle being none as well. This process involves dividing the data into 10 parts with 9 used to train the model and 1 for testing the model. The process is iterated 10 times so that each split is used to test the model once and is used to train the data 9 times.
+
+1 cv = KFold(n\_splits=10, random\_state=None, shuffle=False)
+
+2 for train\_index, test\_index in cv.split(train1):
+
+3 X\_train, X\_test = train1.reindex(train\_index), train1.reindex(test\_index)
+
+4 y\_train, y\_test = train\_ys1.reindex(train\_index),
+
+5 train\_ys1.reindex(test\_index).reset\_index(drop=True)
+
+### **5.4 Decision Tree Model**
+
+**5.4.1 Training**
+
+This was the first model to be tried and the scikit-learn library was used to access the algorithm.
+
+1 DTC1 = tree.DecisionTreeClassifier()
+
+Figure 5.1 Decision Tree on Election data
+
+On the top layer with an entropy of 0.52, the decision tree classifier splits the data on the Tenure feature as it is the feature that causes the most information gain. All data points with a tenure is \&lt;= 0.654 goes to the left and all data points \&gt; 0.654 goes to the right side. The left side with an entropy of 0.418 is then us split on the 80+ feat ![](RackMultipart20210112-4-117sfur_html_f1f5eb00b435ab02.jpg)ure. All datapoints \&lt;= 0.056 goes to the left side while all \&gt; 0.056 goes to the right. While on the right of the root node with an entropy of 0.308, the node is split on the house prices feature. All datapoints with house prices \&lt;=174000 goes to the left while all data points \&gt; 174000 goes to the right. This goes on as each node is further split on a feature that gives the most information gain until it reaches a node that has 0 entropy and therefore does not need to be split further. This node then becomes a leaf of the decision tree.
+
+**5.4.2 Evaluation**
+
+There are a number of metrics that are used to measure the performance of the model. As k fold cross validation was used the evaluation ended up being the average of its performance in the 10 iterations of the cross validation.
+
+![](RackMultipart20210112-4-117sfur_html_2ee653a2082a8a7d.jpg) ![](RackMultipart20210112-4-117sfur_html_6652a9334338b270.png)
+
+![](RackMultipart20210112-4-117sfur_html_619d2d4f6b3da795.gif) ![](RackMultipart20210112-4-117sfur_html_66dd37a91e97437d.gif)
+
+Figure 5.14 Attribute Importance DT
+
+Figure 5.2 ROC Curve for Decision Tree K Fold Split 1 ![](RackMultipart20210112-4-117sfur_html_78ff6f4605571216.png)
+
+Figure 5.3 Accuracy and Confusion Matrix for Decision Tree K Fold Split 1
+
+As seen in figure 5.2 and 5.3 the metrics of the first split are:
+
+- Accuracy - 0.841
+- Precision - 0.618
+- Recall - 0.622
+- F1 Score - 0.620
+- AUC ROC - 0.79
+
+At the end of the 10 iterations of the cross validations, the mean is calculated from all the splits. ![](RackMultipart20210112-4-117sfur_html_ed02d500ee701e57.png)
+
+Figure 5.4 Metrics of Cross Validation for Decision Tree
+
+From figure 5.4 we can see the final metrics are:
+
+- Accuracy - 0.792
+- Precision - 0.591
+- Recall - 0.583
+- F1 Score - 0.579
+- AUC ROC - 0.671
+
+From these metrics we can say that the model is above average. It has a good accuracy but its precision, recall and f1 score are quite average with AUC being a high average.
+
+### **5.5 Random Forest Model**
+
+**5.5.1 Training**
+
+This model is also made using SciKit-Learn.
+
+RF1 = RandomForestClassifier(n\_estimators=1000)
+
+It uses a similar algorithm to decision tree but instead of having only one tree it has 1000 as estimators it has been set to 1000. There are 1000 decision trees splitting at different features in order to make the results as diverse as possible. A sort of vote is had on predictions and the final prediction is calculated as the prediction which is the most common among all the 1000 decision trees.
+
+**5.5.2 Evaluation**
+
+Again K Fold Cross validation is used in a 10 split iteration. So the data is split into 10 parts and trained 10 times with the test split changed each iteration. ![](RackMultipart20210112-4-117sfur_html_de3942027d10e97b.jpg) ![](RackMultipart20210112-4-117sfur_html_c451ff66f296d58f.png)
+
+![](RackMultipart20210112-4-117sfur_html_9269398964208299.gif)
+
+Figure 5.14 Attribute Importance RF
+
+![](RackMultipart20210112-4-117sfur_html_b38531ce9d5a920.gif)
+
+Figure 5.5 ROC Curve for Random Forest K Fold Split 1
+
+![](RackMultipart20210112-4-117sfur_html_68f20645f1e03241.png)
+
+Figure 5.6 Accuracy and Confusion Matrix for Random Forest K Fold Split 1
+
+The metrics of the first split are:
+
+- Accuracy - 0.886
+- Precision - 0.591
+- Recall - 0.607
+- F1 Score - 0.599
+- AUC ROC - 0.77
+
+At the end of the 10 iterations of the cross validations, the mean is calculated from all the splits. ![](RackMultipart20210112-4-117sfur_html_de31c3f59ec6a91e.png)
+
+Figure 5.7 Metrics of Cross Validation for Random Forest
+
+From figure 5.7 we can see the final metrics from the means are:
+
+- Accuracy - 0.847
+- Precision - 0.596
+- Recall - 0.586
+- F1 Score - 0.577
+- AUC ROC - 0.710
+
+From the metrics we can say that this model is good. It has a very good accuracy but its precision, recall and f1 score are on the high average side with the AUC Score being on the good side.
+
+### **5.6 AdaBoost Model**
+
+**5.6.1 Training**
+
+This model is also made using SciKit-Learn.
+
+ada1 = AdaBoostClassifier(n\_estimators=100)
+
+Estimators is set to 100 which means 100 smaller classifiers are used to create the bigger and better classifier. When I fit the training data in it starts by generating a random classifier and by its accuracy assigns a weight to it. Slowly building a better more accurate classifier until a 100 classifiers are built.
+
+**5.6.2 Evaluation**
+
+With the use of K Fold Cross validation, the data is trained over 10 times with 10 different splits. ![](RackMultipart20210112-4-117sfur_html_cc6d56d63d8788fd.gif)
+
+![](RackMultipart20210112-4-117sfur_html_8c3092b85d1aec22.jpg)
+
+![](RackMultipart20210112-4-117sfur_html_a98a71c10ffd3db5.gif)
+
+Figure 5.8 ROC Curve for Ada Boost K Fold Split 1 ![](RackMultipart20210112-4-117sfur_html_bbea66142e0bee06.png)
+
+Figure 5.9 Accuracy and Confusion Matrix for Ada Boost K Fold Split 1
+
+The metrics of the first split are:
+
+- Accuracy - 0.829
+- Precision - 0.663
+- Recall - 0.701
+- F1 Score - 0.675
+- AUC ROC - 0.80
+
+At the end of the 10 iterations of the cross validations, the mean is calculated from all the splits. ![](RackMultipart20210112-4-117sfur_html_59bed8a35a5247fe.png)
+
+Figure 5.10 Metrics of Cross Validation for Ada Boost
+
+From figure 5.7 we can see the final metrics from the means are:
+
+- Accuracy - 0.806
+- Precision - 0.606
+- Recall - 0.611
+- F1 Score - 0.5999
+- AUC ROC - 0.802
+
+From these metrics we can say this model is good. It has a very high accuracy and AUC Score with nearly good precision, recall and f1 score .
+
+### **5.7 SVM Model**
+
+**5.7.1 Training**
+
+This model is also made using SciKit-Learn.
+
+clfsvmlinear1 = svm.SVC(C= 2.0, degree= 1, kernel= &#39;rbf&#39;)
+
+When C = 2 it uses a slightly smaller margin hyperplane if that hyperplane does a better job of getting all the training points classified correctly. The degree is set to 1 and the kernel used is ref. On fitting the data into the model it tries to find the best position a hyperplane can split it in order to make correct predictions.
+
+**5.7.2 Evaluation**
+
+With the use of K Fold Cross validation, the data is trained over 10 times with 10 ![](RackMultipart20210112-4-117sfur_html_51467947d53b298.jpg) different splits.
+
+Figure 5.11 ROC Curve for SVM K Fold Split 1
+
+![](RackMultipart20210112-4-117sfur_html_5970c252c29a4d1.png)
+
+Figure 5.12 Accuracy and Confusion Matrix for SVM K Fold Split 1
+
+The metrics of the first split are:
+
+- Accuracy - 0.478
+- Precision - 0.527
+- Recall - 0.478
+- F1 Score - 0.366
+- AUC ROC - 0.51
+
+At the end of the 10 iterations of the cross validations, the mean is calculated from all the splits. ![](RackMultipart20210112-4-117sfur_html_7d05cd111a7f6a94.png)
+
+Figure 5.13 Metrics of Cross Validation for SVM
+
+From figure 5.7 we can see the final metrics from the means are:
+
+- Accuracy - 0.58
+- Precision - 0.61
+- Recall - 0.58
+- F1 Score - 0.471
+- AUC ROC - 0.558
+
+From these metrics we can say this model has a low average performance a its accuracy, recall and arc score slightly below 0.6. It has a poor f1 score and manages to get slightly above 0.6 on precision.
+
+### **5.8 Overall Evaluation**
+
+Overall the SVM model was the one with the lowest performance as most of the metrics were on the low average side with f1 score dropping to 0.47. The best performing model on the other hand was between the random forest model and the ada boost model but I believe ada boost is better because although it has the lesser average between the two models, Ada Boost model performs better in all the other metrics.
+
 # **Chapter 6**
 
 # **Testing**
 
+In this chapter I would be looking at using the best model from the previous chapter to predict past UK Elections. As the Ada Boost model was the best performing that will be the model used for these predictions.
+
+![](RackMultipart20210112-4-117sfur_html_8ff8d4cd20461e9d.gif)
+ ![](RackMultipart20210112-4-117sfur_html_c9c1185efe826095.gif)
+The def function Election(year): is one i made that when an election year between 2005 and 2019 is entered, a dataset of predictions are returned. Below I will look at each year and see how accurate the election predictions are to the actual results.
+
+### **6.1 2005 Elections**
+
+In the 2005 quite a bit of the data is missing so prediction is not as accurate as can be. Also in 2005 some constituencies were structured different or didn&#39;t exist so it did not match with the remaining data.
+
+![](RackMultipart20210112-4-117sfur_html_6cb04afa4ba6bd63.gif)
+
+![](RackMultipart20210112-4-117sfur_html_1c60da4f7e26e33f.gif)
+
+- 2005 Ada Boost Achieved Prediction Accuracy 0.716
+- 2005 Ada Boost Achieved Precision 0.685
+- 2005 Ada Boost Achieved Recall 0.623
+- 2005 Ada Boost Achieved F1 Score 0.620
+- ![](RackMultipart20210112-4-117sfur_html_771fe87a737a9a73.gif)
+2005 Ada Boost Achieved ROC AUC Score 0.737 ![](RackMultipart20210112-4-117sfur_html_ef369e90df36c57a.gif)
+
+### **6.2 2010 Elections**
+
+- 2010 Ada Boost Achieved Prediction Accuracy 0.809
+- 2010 Ada Boost Achieved Precision 0.703
+- ![](RackMultipart20210112-4-117sfur_html_1823b3a64bebd035.gif)
+ ![](RackMultipart20210112-4-117sfur_html_c2006550efe29ea1.gif)
+2010 Ada Boost Achieved Recall 0.617
+- 2010 Ada Boost Achieved F1 Score 0.604
+- 2010 Ada Boost Achieved ROC AUC Score 0.751
+
+![](RackMultipart20210112-4-117sfur_html_5bec571beba240b6.gif)
+
+![](RackMultipart20210112-4-117sfur_html_62142a79f1a3f032.gif)
+
+![](RackMultipart20210112-4-117sfur_html_da5b7970ed116303.gif)
+ ![](RackMultipart20210112-4-117sfur_html_806730ec4e4f0875.gif)
+ ![](RackMultipart20210112-4-117sfur_html_f8bcebf16eaf3d63.gif)
+
+### **6.3 2015 Elections**
+
+- 2015 Ada Boost Achieved Prediction Accuracy 0.827
+- 2015 Ada Boost Achieved Precision 0.605
+- 2015 Ada Boost Achieved Recall 0.682
+- 2015 Ada Boost Achieved F1 Score 0.614
+- 2015 Ada Boost Achieved ROC AUC Score 0.795 ![](RackMultipart20210112-4-117sfur_html_a6fc6cc7d581b042.gif)
+
+![](RackMultipart20210112-4-117sfur_html_2ad4aed7125a5486.gif)
+
+![](RackMultipart20210112-4-117sfur_html_bd7f7559a2924d6d.gif)
+
+### **6.4 2017 Elections**
+ ![](RackMultipart20210112-4-117sfur_html_f041bfcbdf7b951f.gif)
+
+![](RackMultipart20210112-4-117sfur_html_56c228df8d8f69df.gif)
+
+- 2017 Ada Boost Achieved Prediction Accuracy 0.877
+- 2017 Ada Boost Achieved Precision 0.726
+- 2017 Ada Boost Achieved Recall 0.837
+- 2017 Ada Boost Achieved F1 Score 0.764
+- 2017 Ada Boost Achieved ROC AUC Score 0.881 ![](RackMultipart20210112-4-117sfur_html_24da7bf674f53fa.gif)
+ ![](RackMultipart20210112-4-117sfur_html_7e42c992580fce9.gif)
+ ![](RackMultipart20210112-4-117sfur_html_40773f337522b871.gif) ![](RackMultipart20210112-4-117sfur_html_46f11f9f7d1513a7.gif)
+
+### **6.5 2019 Elections**
+
+- 2019 Ada Boost Achieved Prediction Accuracy 0.826
+- 2019 Ada Boost Achieved Precision 0.874
+- ![](RackMultipart20210112-4-117sfur_html_3ede5a641d1a9d9d.gif)
+ ![](RackMultipart20210112-4-117sfur_html_d0d0dee97dedea1a.gif)
+2019 Ada Boost Achieved Recall 0.613
+- 2019 Ada Boost Achieved F1 Score 0.632
+- 2019 Ada Boost Achieved ROC AUC Score 0.753 ![](RackMultipart20210112-4-117sfur_html_7ba60050e5eba751.gif)
+
+Figure 6.31 Subset of 2019 Prediction Table
+
+![](RackMultipart20210112-4-117sfur_html_55ca42880ee2a574.gif)
+
+### **6.6 ![](RackMultipart20210112-4-117sfur_html_8db3d01464562de9.gif)
+ Summary**
+
+From these tests we can see that indeed the adaBoost classifier that I have created is has a high performance and accuracy as in all the years, the lowest accuracy was over 0.7 and the highest was 0.87 which is a very good accuracy score.The charts are also shown to see the distribution of the predictions and make it more understandable.
+
 # **Chapter 7**
 
 # **Conclusion**
+
+So far this paper has outlined the motivation for the project, the existing literature, the inspiration and how to create and choose the adequate model to make a certain prediction. This chapter puts that work into context, discussing how the project and its results compare to similar work. This chapter also explores the directions that the project may take beyond this paper and potential improvements.
+
+### **7.1 Future Work**
+
+Majority of the requirements were fulfilled apart from the part in which I could not access Twitter data. Therefore these are things I would like to add to this project in the future.
+
+- Use live data from social media such as Twitter where I can mine live text to expand the dataset.
+- Expand model to be able to predict elections of other countries.
+
+### **7.2 Conclusion**
+
+This paper aimed to create an adequate model for predicting UK election outcome in England. Decision tree, Random forest, adaBoost, SVM models were looked into and evaluated and a ![](RackMultipart20210112-4-117sfur_html_69734c4006476d24.png)fter adequate testing adaBoost was chosen as the most adequate out of the options. The model did not let down as it was able to score a high prediction accuracy in all elections given to it.
 
 # **Bibliography**
 
@@ -602,4 +1109,1004 @@ Feature encoding is basically performing transformations on the data such that i
 
 [25] Towardsdatascience. (2020). _&quot;__SENTIMENTAL ANALYSIS USING VADER_ _interpretation and classification of emotions&quot;_ [online] Available at: [https://towardsdatascience.com/sentimental-analysis-using-vader-a3415fef7664](https://towardsdatascience.com/sentimental-analysis-using-vader-a3415fef7664)
 
-[26] Towardsdatascience. (2018). &quot;Introduction to Data Preprocessing in Machine Learning&quot; [online] https://towardsdatascience.com/introduction-to-data-preprocessing-in-machine-learning-a9fa83a5dc9d
+[26] Towardsdatascience. (2018). &quot;Introduction to Data Preprocessing in Machine Learning&quot; [online] [https://towardsdatascience.com/introduction-to-data-preprocessing-in-machine-learning-a9fa83a5dc9d](https://towardsdatascience.com/introduction-to-data-preprocessing-in-machine-learning-a9fa83a5dc9d)
+
+[26] Towardsdatascience. (2020). &quot;All Machine Learning Models Explained in 6 Minutes&quot; [online] [https://towardsdatascience.com/all-machine-learning-models-explained-in-6-minutes-9fe30ff6776a](https://towardsdatascience.com/all-machine-learning-models-explained-in-6-minutes-9fe30ff6776a)
+
+[27] Towardsdatascience. (2019). &quot;Decision Tree Classification&quot; [online] [https://towardsdatascience.com/https-medium-com-lorrli-classification-and-regression-analysis-with-decision-trees-c43cdbc58054](https://towardsdatascience.com/https-medium-com-lorrli-classification-and-regression-analysis-with-decision-trees-c43cdbc58054)
+
+[28] Towardsdatascience. (2019). &quot;Understanding Random Forest&quot; [online] [https://towardsdatascience.com/understanding-random-forest-58381e0602d2](https://towardsdatascience.com/understanding-random-forest-58381e0602d2)
+
+[29] analyticsvidhya. (2017). &quot;Understanding Support Vector Machine(SVM) algorithm from examples (along with code)&quot; [online] [https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/](https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/)
+
+[30] Towardsdatascience. (2020). &quot;How to Best Evaluate a Classification Model&quot; [online] [https://towardsdatascience.com/how-to-best-evaluate-a-classification-model-2edb12bcc587](https://towardsdatascience.com/how-to-best-evaluate-a-classification-model-2edb12bcc587)
+
+[31] Tweepy Documentation [online][http://docs.tweepy.org/en/latest/](http://docs.tweepy.org/en/latest/)
+
+[32] NLTK 3.5 Documentation [online] [https://www.nltk.org/](https://www.nltk.org/)
+
+[33] BeautifulSoup4 4.91 Documentation [online] [https://pypi.org/project/beautifulsoup4/](https://pypi.org/project/beautifulsoup4/)
+
+[34] Scikit-learn 0.21.3 Documentation [online] [https://scikit-learn.org/0.21/documentation.html](https://scikit-learn.org/0.21/documentation.html)
+
+[35] Matplotlib 3.3.2 Documentation [online] [https://matplotlib.org/users/index.html](https://matplotlib.org/users/index.html)
+
+[36] Pandas Documentation [online] [https://pandas.pydata.org/docs/user\_guide/index.html](https://pandas.pydata.org/docs/user_guide/index.html)
+
+[37] Numpy 1.19 Documentation [online] [https://numpy.org/doc/stable/](https://numpy.org/doc/stable/)
+
+[38] Seaborn [online] [https://seaborn.pydata.org/introduction.html](https://seaborn.pydata.org/introduction.html)
+
+[39] GeoPandas [online] [https://geopandas.org/](https://geopandas.org/)
+
+# **Appendix A**
+
+# **Decision Tree Model**
+
+toprow = [&quot;Random&quot;, &quot;Med. House Price&quot;, &quot;Med. Wage&quot;, &quot;Prop. British&quot;, &quot;Tenure&quot;, &quot;Grades&quot;, &quot;0-9&quot;, &quot;10-19&quot;, &quot;20-29&quot;, &quot;30-39&quot;, &quot;40-49&quot;, &quot;50-59&quot;, &quot;60-69&quot;, &quot;70-79&quot;, &quot;80+&quot;, &quot;Brexit&quot;,
+
+&quot;Labour Sentiment&quot;,&quot;Conservative Sentiment&quot;,&quot;Conservative Leader Sentiment&quot;,&quot;Labour Leader Sentiment&quot;,&quot;result2017&quot;]
+
+toprow= list(train1.columns.values)
+
+scores=[]
+
+precisions=[]
+
+recalls=[]
+
+fscores=[]
+
+p=1
+
+DTC1 = tree.DecisionTreeClassifier()
+
+for train\_index, test\_index in cv.split(train1):
+
+X\_train, X\_test = train1.reindex(train\_index), train1.reindex(test\_index)
+
+y\_train, y\_test = train\_ys1.reindex(train\_index), train\_ys1.reindex(test\_index).reset\_index(drop=True)
+
+DTC1.fit(X\_train, y\_train)
+
+print(&#39;Accuracy for Split &#39;+ str(p))
+
+print(DTC1.score(X\_test, y\_test))
+
+scores.append(DTC1.score(X\_test, y\_test))
+
+pred = DTC1.predict(X\_test)
+
+print(&#39;Confusion Matric for Split &#39;+ str(p))
+
+print(ConfusionMatrix(y\_test, pred))
+
+print(&#39;Precision, Recall, F1 Score for Split &#39;+str(p))
+
+print(precision\_recall\_fscore\_support(y\_test, pred, average=&#39;macro&#39;))
+
+precision,recall,fscore,support=precision\_recall\_fscore\_support(y\_test, pred, average=&#39;macro&#39;)
+
+precisions.append(precision)
+
+recalls.append(recall)
+
+fscores.append(fscore)
+
+predbin = label\_binarize(pred,classes=[0,1,2,])
+
+y\_testbin = label\_binarize(y\_test,classes=[0,1,2,])
+
+n\_classes = predbin.shape[1]
+
+fpr = dict()
+
+tpr = dict()
+
+roc\_auc = dict()
+
+for i in range(n\_classes):
+
+fpr[i], tpr[i], \_ = roc\_curve(y\_testbin[:, i], predbin[:, i])
+
+roc\_auc[i] = auc(fpr[i], tpr[i])
+
+fpr[&quot;micro&quot;], tpr[&quot;micro&quot;], \_ = roc\_curve(y\_testbin.ravel(), predbin.ravel())
+
+roc\_auc[&quot;micro&quot;] = auc(fpr[&quot;micro&quot;], tpr[&quot;micro&quot;])
+
+# First aggregate all false positive rates
+
+all\_fpr = np.unique(np.concatenate([fpr[i] for i in range(n\_classes)]))
+
+# Then interpolate all ROC curves at this points
+
+mean\_tpr = np.zeros\_like(all\_fpr)
+
+for i in range(n\_classes):
+
+mean\_tpr += interp(all\_fpr, fpr[i], tpr[i])
+
+# Finally average it and compute AUC
+
+mean\_tpr /= n\_classes
+
+fpr[&quot;macro&quot;] = all\_fpr
+
+tpr[&quot;macro&quot;] = mean\_tpr
+
+roc\_auc[&quot;macro&quot;] = auc(fpr[&quot;macro&quot;], tpr[&quot;macro&quot;])
+
+# Plot all ROC curves
+
+plt.figure()
+
+plt.plot(fpr[&quot;micro&quot;], tpr[&quot;micro&quot;],
+
+label=&#39;micro-average ROC curve (area = {0:0.2f})&#39;
+
+&#39;&#39;.format(roc\_auc[&quot;micro&quot;]),
+
+color=&#39;green&#39;, linestyle=&#39;:&#39;, linewidth=4)
+
+plt.plot(fpr[&quot;macro&quot;], tpr[&quot;macro&quot;],
+
+label=&#39;macro-average ROC curve (area = {0:0.2f})&#39;
+
+&#39;&#39;.format(roc\_auc[&quot;macro&quot;]),
+
+color=&#39;navy&#39;, linestyle=&#39;:&#39;, linewidth=4)
+
+colors = cycle([&#39;blue&#39;, &#39;orange&#39;, &#39;red&#39;])
+
+for i, color in zip(range(n\_classes), colors):
+
+plt.plot(fpr[i], tpr[i], color=color, linewidth=2,
+
+label=&#39;ROC curve of class {0} (area = {1:0.2f})&#39;
+
+&#39;&#39;.format(i, roc\_auc[i]))
+
+plt.plot([0, 1], [0, 1], &#39;k--&#39;, linewidth=2)
+
+plt.xlim([0.0, 1.0])
+
+plt.ylim([0.0, 1.05])
+
+plt.xlabel(&#39;False Positive Rate&#39;)
+
+plt.ylabel(&#39;True Positive Rate&#39;)
+
+plt.title(&#39;Receiver operating characteristic to multi-class &#39;+str(p))
+
+p+=1
+
+plt.legend(loc=&quot;lower right&quot;)
+
+plt.show()
+
+plt.barh(toprow, DTC1.feature\_importances\_)
+
+plt.title(&quot;Attribute Importance, &quot;)
+
+plt.xlabel(&quot;Fractional contribution to predictive power&quot;)
+
+plt.show()
+
+acc = np.mean(scores)
+
+print(&#39;Accuracy =&#39;+ str(acc))
+
+precisionavg = np.mean(precisions)
+
+print(&#39;Precision =&#39;+ str(precisionavg))
+
+recallavg = np.mean(recalls)
+
+print(&#39;Recall =&#39;+ str(recallavg))
+
+fscoreavg = np.mean(fscores)
+
+print(&#39;F1 Score =&#39;+ str(fscoreavg))
+
+print(&#39;ROC AUC Score =&#39;+ str(roc\_auc[&quot;macro&quot;]))
+
+# **Appendix B**
+
+# **Random Forest Model**
+
+scores=[]
+
+precisions=[]
+
+recalls=[]
+
+fscores=[]
+
+p=1
+
+RF1 = RandomForestClassifier(n\_estimators=1000)
+
+for train\_index, test\_index in cv.split(train1):
+
+X\_train, X\_test = train1.iloc[train\_index], train1.iloc[test\_index]
+
+y\_train, y\_test = train\_ys1.reindex(train\_index), train\_ys1.reindex(test\_index).reset\_index(drop=True)
+
+RF1.fit(X\_train, y\_train)
+
+print(&#39;Accuracy for Split &#39;+ str(p))
+
+print(RF1.score(X\_test, y\_test))
+
+scores.append(RF1.score(X\_test, y\_test))
+
+pred = RF1.predict(X\_test)
+
+print(&#39;Confusion Matric for Split &#39;+ str(p))
+
+print(ConfusionMatrix(y\_test, pred))
+
+print(&#39;Precision, Recall, F Score for Split &#39;+str(p))
+
+print(precision\_recall\_fscore\_support(y\_test, pred, average=&#39;macro&#39;))
+
+precision,recall,fscore,support=precision\_recall\_fscore\_support(y\_test, pred, average=&#39;macro&#39;)
+
+precisions.append(precision)
+
+recalls.append(recall)
+
+fscores.append(fscore)
+
+predbin = label\_binarize(pred,classes=[0,1,2,])
+
+y\_testbin = label\_binarize(y\_test,classes=[0,1,2,])
+
+n\_classes = predbin.shape[1]
+
+fpr = dict()
+
+tpr = dict()
+
+roc\_auc = dict()
+
+for i in range(n\_classes):
+
+fpr[i], tpr[i], \_ = roc\_curve(y\_testbin[:, i], predbin[:, i])
+
+roc\_auc[i] = auc(fpr[i], tpr[i])
+
+fpr[&quot;micro&quot;], tpr[&quot;micro&quot;], \_ = roc\_curve(y\_testbin.ravel(), predbin.ravel())
+
+roc\_auc[&quot;micro&quot;] = auc(fpr[&quot;micro&quot;], tpr[&quot;micro&quot;])
+
+# First aggregate all false positive rates
+
+all\_fpr = np.unique(np.concatenate([fpr[i] for i in range(n\_classes)]))
+
+# Then interpolate all ROC curves at this points
+
+mean\_tpr = np.zeros\_like(all\_fpr)
+
+for i in range(n\_classes):
+
+mean\_tpr += interp(all\_fpr, fpr[i], tpr[i])
+
+# Finally average it and compute AUC
+
+mean\_tpr /= n\_classes
+
+fpr[&quot;macro&quot;] = all\_fpr
+
+tpr[&quot;macro&quot;] = mean\_tpr
+
+roc\_auc[&quot;macro&quot;] = auc(fpr[&quot;macro&quot;], tpr[&quot;macro&quot;])
+
+# Plot all ROC curves
+
+plt.figure()
+
+plt.plot(fpr[&quot;micro&quot;], tpr[&quot;micro&quot;],
+
+label=&#39;micro-average ROC curve (area = {0:0.2f})&#39;
+
+&#39;&#39;.format(roc\_auc[&quot;micro&quot;]),
+
+color=&#39;green&#39;, linestyle=&#39;:&#39;, linewidth=4)
+
+plt.plot(fpr[&quot;macro&quot;], tpr[&quot;macro&quot;],
+
+label=&#39;macro-average ROC curve (area = {0:0.2f})&#39;
+
+&#39;&#39;.format(roc\_auc[&quot;macro&quot;]),
+
+color=&#39;navy&#39;, linestyle=&#39;:&#39;, linewidth=4)
+
+colors = cycle([&#39;blue&#39;, &#39;orange&#39;, &#39;red&#39;])
+
+for i, color in zip(range(n\_classes), colors):
+
+plt.plot(fpr[i], tpr[i], color=color, linewidth=2,
+
+label=&#39;ROC curve of class {0} (area = {1:0.2f})&#39;
+
+&#39;&#39;.format(i, roc\_auc[i]))
+
+plt.plot([0, 1], [0, 1], &#39;k--&#39;, linewidth=2)
+
+plt.xlim([0.0, 1.0])
+
+plt.ylim([0.0, 1.05])
+
+plt.xlabel(&#39;False Positive Rate&#39;)
+
+plt.ylabel(&#39;True Positive Rate&#39;)
+
+plt.title(&#39;Receiver operating characteristic to multi-class &#39;+str(p))
+
+p+=1
+
+plt.legend(loc=&quot;lower right&quot;)
+
+plt.show()
+
+plt.barh(toprow, RF1.feature\_importances\_)
+
+plt.title(&quot;Attribute Importance, Adaboost, &quot;)
+
+plt.xlabel(&quot;Fractional contribution to predictive power&quot;)
+
+plt.show()
+
+acc = np.mean(scores)
+
+print(&#39;Accuracy =&#39;+ str(acc))
+
+precisionavg = np.mean(precisions)
+
+print(&#39;Precision =&#39;+ str(precisionavg))
+
+recallavg = np.mean(recalls)
+
+print(&#39;Recall =&#39;+ str(recallavg))
+
+fscoreavg = np.mean(fscores)
+
+print(&#39;F1 Score =&#39;+ str(fscoreavg))
+
+print(&#39;ROC AUC Score =&#39;+ str(roc\_auc[&quot;macro&quot;]))
+
+# **Appendix C**
+
+# **AdaBoost Model**
+
+scores=[]
+
+precisions=[]
+
+recalls=[]
+
+fscores=[]
+
+p=1
+
+ada1 = AdaBoostClassifier(n\_estimators=100)
+
+for train\_index, test\_index in cv.split(train1):
+
+X\_train, X\_test = train1.iloc[train\_index], train1.iloc[test\_index]
+
+y\_train, y\_test = train\_ys1.reindex(train\_index), train\_ys1.reindex(test\_index).reset\_index(drop=True)
+
+ada1.fit(X\_train, y\_train)
+
+print(&#39;Accuracy for Split &#39;+ str(p))
+
+print(ada1.score(X\_test, y\_test))
+
+scores.append(ada1.score(X\_test, y\_test))
+
+pred = ada1.predict(X\_test)
+
+print(&#39;Confusion Matric for Split &#39;+ str(p))
+
+print(ConfusionMatrix(y\_test, pred))
+
+print(&#39;Precision, Recall, F Score for Split &#39;+str(p))
+
+print(precision\_recall\_fscore\_support(y\_test, pred, average=&#39;macro&#39;))
+
+precision,recall,fscore,support=precision\_recall\_fscore\_support(y\_test, pred, average=&#39;macro&#39;)
+
+precisions.append(precision)
+
+recalls.append(recall)
+
+fscores.append(fscore)
+
+predbin = label\_binarize(pred,classes=[0,1,2,])
+
+y\_testbin = label\_binarize(y\_test,classes=[0,1,2,])
+
+n\_classes = predbin.shape[1]
+
+fpr = dict()
+
+tpr = dict()
+
+roc\_auc = dict()
+
+for i in range(n\_classes):
+
+fpr[i], tpr[i], \_ = roc\_curve(y\_testbin[:, i], predbin[:, i])
+
+roc\_auc[i] = auc(fpr[i], tpr[i])
+
+fpr[&quot;micro&quot;], tpr[&quot;micro&quot;], \_ = roc\_curve(y\_testbin.ravel(), predbin.ravel())
+
+roc\_auc[&quot;micro&quot;] = auc(fpr[&quot;micro&quot;], tpr[&quot;micro&quot;])
+
+# First aggregate all false positive rates
+
+all\_fpr = np.unique(np.concatenate([fpr[i] for i in range(n\_classes)]))
+
+# Then interpolate all ROC curves at this points
+
+mean\_tpr = np.zeros\_like(all\_fpr)
+
+for i in range(n\_classes):
+
+mean\_tpr += interp(all\_fpr, fpr[i], tpr[i])
+
+# Finally average it and compute AUC
+
+mean\_tpr /= n\_classes
+
+fpr[&quot;macro&quot;] = all\_fpr
+
+tpr[&quot;macro&quot;] = mean\_tpr
+
+roc\_auc[&quot;macro&quot;] = auc(fpr[&quot;macro&quot;], tpr[&quot;macro&quot;])
+
+# Plot all ROC curves
+
+plt.figure()
+
+plt.plot(fpr[&quot;micro&quot;], tpr[&quot;micro&quot;],
+
+label=&#39;micro-average ROC curve (area = {0:0.2f})&#39;
+
+&#39;&#39;.format(roc\_auc[&quot;micro&quot;]),
+
+color=&#39;green&#39;, linestyle=&#39;:&#39;, linewidth=4)
+
+plt.plot(fpr[&quot;macro&quot;], tpr[&quot;macro&quot;],
+
+label=&#39;macro-average ROC curve (area = {0:0.2f})&#39;
+
+&#39;&#39;.format(roc\_auc[&quot;macro&quot;]),
+
+color=&#39;navy&#39;, linestyle=&#39;:&#39;, linewidth=4)
+
+colors = cycle([&#39;blue&#39;, &#39;orange&#39;, &#39;red&#39;])
+
+for i, color in zip(range(n\_classes), colors):
+
+plt.plot(fpr[i], tpr[i], color=color, linewidth=2,
+
+label=&#39;ROC curve of class {0} (area = {1:0.2f})&#39;
+
+&#39;&#39;.format(i, roc\_auc[i]))
+
+plt.plot([0, 1], [0, 1], &#39;k--&#39;, linewidth=2)
+
+plt.xlim([0.0, 1.0])
+
+plt.ylim([0.0, 1.05])
+
+plt.xlabel(&#39;False Positive Rate&#39;)
+
+plt.ylabel(&#39;True Positive Rate&#39;)
+
+plt.title(&#39;Receiver operating characteristic to multi-class &#39;+str(p))
+
+p+=1
+
+plt.legend(loc=&quot;lower right&quot;)
+
+plt.show()
+
+plt.barh(toprow, ada1.feature\_importances\_)
+
+plt.title(&quot;Attribute Importance, Adaboost, &quot;)
+
+plt.xlabel(&quot;Fractional contribution to predictive power&quot;)
+
+plt.show()
+
+acc = np.mean(scores)
+
+print(&#39;Accuracy =&#39;+ str(acc))
+
+precisionavg = np.mean(precisions)
+
+print(&#39;Precision =&#39;+ str(precisionavg))
+
+recallavg = np.mean(recalls)
+
+print(&#39;Recall =&#39;+ str(recallavg))
+
+fscoreavg = np.mean(fscores)
+
+print(&#39;F1 Score =&#39;+ str(fscoreavg))
+
+print(&#39;ROC AUC Score =&#39;+ str(roc\_auc[&quot;macro&quot;]))
+
+# **Appendix D**
+
+# **SVM Model**
+
+p=1
+
+scores=[]
+
+precisions=[]
+
+recalls=[]
+
+fscores=[]
+
+clfsvmlinear1 = svm.SVC(C= 2.0, degree= 1, kernel= &#39;rbf&#39;)
+
+for train\_index, test\_index in cv.split(train1):
+
+X\_train, X\_test = train1.iloc[train\_index], train1.iloc[test\_index]
+
+y\_train, y\_test = train\_ys1.reindex(train\_index), train\_ys1.reindex(test\_index).reset\_index(drop=True)
+
+clfsvmlinear1.fit(X\_train, y\_train)
+
+print(&#39;Accuracy for Split &#39;+str(p))
+
+print(clfsvmlinear1.score(X\_test, y\_test))
+
+scores.append(clfsvmlinear1.score(X\_test, y\_test))
+
+pred = clfsvmlinear1.predict(X\_test)
+
+print(&#39;Confusion Matric for Split &#39;+str(p))
+
+print(ConfusionMatrix(y\_test, pred))
+
+precision,recall,fscore,support=precision\_recall\_fscore\_support(y\_test, pred, average=&#39;weighted&#39;)
+
+precisions.append(precision)
+
+recalls.append(recall)
+
+fscores.append(fscore)
+
+print(&#39;Precision, Recall, F Score for Split &#39;+str(p))
+
+print(precision\_recall\_fscore\_support(y\_test, pred, average=&#39;weighted&#39;))
+
+predbin = label\_binarize(pred,classes=[0,1,2,])
+
+y\_testbin = label\_binarize(y\_test,classes=[0,1,2,])
+
+n\_classes = predbin.shape[1]
+
+fpr = dict()
+
+tpr = dict()
+
+roc\_auc = dict()
+
+for i in range(n\_classes):
+
+fpr[i], tpr[i], \_ = roc\_curve(y\_testbin[:, i], predbin[:, i])
+
+roc\_auc[i] = auc(fpr[i], tpr[i])
+
+fpr[&quot;micro&quot;], tpr[&quot;micro&quot;], \_ = roc\_curve(y\_testbin.ravel(), predbin.ravel())
+
+roc\_auc[&quot;micro&quot;] = auc(fpr[&quot;micro&quot;], tpr[&quot;micro&quot;])
+
+# First aggregate all false positive rates
+
+all\_fpr = np.unique(np.concatenate([fpr[i] for i in range(n\_classes)]))
+
+# Then interpolate all ROC curves at this points
+
+mean\_tpr = np.zeros\_like(all\_fpr)
+
+for i in range(n\_classes):
+
+mean\_tpr += interp(all\_fpr, fpr[i], tpr[i])
+
+# Finally average it and compute AUC
+
+mean\_tpr /= n\_classes
+
+fpr[&quot;macro&quot;] = all\_fpr
+
+tpr[&quot;macro&quot;] = mean\_tpr
+
+roc\_auc[&quot;macro&quot;] = auc(fpr[&quot;macro&quot;], tpr[&quot;macro&quot;])
+
+# Plot all ROC curves
+
+plt.figure()
+
+plt.plot(fpr[&quot;micro&quot;], tpr[&quot;micro&quot;],
+
+label=&#39;micro-average ROC curve (area = {0:0.2f})&#39;
+
+&#39;&#39;.format(roc\_auc[&quot;micro&quot;]),
+
+color=&#39;green&#39;, linestyle=&#39;:&#39;, linewidth=4)
+
+plt.plot(fpr[&quot;macro&quot;], tpr[&quot;macro&quot;],
+
+label=&#39;macro-average ROC curve (area = {0:0.2f})&#39;
+
+&#39;&#39;.format(roc\_auc[&quot;macro&quot;]),
+
+color=&#39;navy&#39;, linestyle=&#39;:&#39;, linewidth=4)
+
+colors = cycle([&#39;blue&#39;, &#39;orange&#39;, &#39;red&#39;])
+
+for i, color in zip(range(n\_classes), colors):
+
+plt.plot(fpr[i], tpr[i], color=color, linewidth=2,
+
+label=&#39;ROC curve of class {0} (area = {1:0.2f})&#39;
+
+&#39;&#39;.format(i, roc\_auc[i]))
+
+plt.plot([0, 1], [0, 1], &#39;k--&#39;, linewidth=2)
+
+plt.xlim([0.0, 1.0])
+
+plt.ylim([0.0, 1.05])
+
+plt.xlabel(&#39;False Positive Rate&#39;)
+
+plt.ylabel(&#39;True Positive Rate&#39;)
+
+plt.title(&#39;Receiver operating characteristic to multi-class &#39;+str(p))
+
+p+=1
+
+plt.legend(loc=&quot;lower right&quot;)
+
+plt.show()
+
+acc = np.mean(scores)
+
+# print(&#39;Scores =&#39;+ str(scores))
+
+print(&#39;Accuracy =&#39;+ str(acc))
+
+precisionavg = np.mean(precisions)
+
+print(&#39;Precision =&#39;+ str(precisionavg))
+
+recallavg = np.mean(recalls)
+
+print(&#39;Recall =&#39;+ str(recallavg))
+
+fscoreavg = np.mean(fscores)
+
+print(&#39;F1 Score =&#39;+ str(fscoreavg))
+
+print(&#39;ROC AUC Score =&#39;+ str(roc\_auc[&quot;macro&quot;]))
+
+# **Appendix E**
+
+# **AdaBoost Model for Election()**
+
+def Election(year):
+
+train = master.copy()
+
+train = train.loc[train[&#39;Year&#39;]!= int(year)]
+
+year\_to\_use = &quot;result&quot; + str(year)
+
+train\_ys = train[&#39;result&#39;]
+
+test = master.copy()
+
+test = test.loc[test[&#39;Year&#39;]== int(year)]
+
+#Removing unnecessary columns from the training X data
+
+original\_training\_data = train
+
+original\_test\_data = test
+
+train = train.drop(columns=[&#39;id&#39;, &#39;PCON13CD&#39;, &#39;PCON13CDO&#39;, &#39;Constituencies&#39;, &#39;geometry&#39;, &#39;result&#39;,&#39;Year&#39;])
+
+test\_ys = test[&#39;result&#39;]
+
+test\_ys=test\_ys.to\_numpy()
+
+#Removing unnecessary columns from the X test data
+
+test = test.drop(columns=[&#39;id&#39;, &#39;PCON13CD&#39;, &#39;PCON13CDO&#39;, &#39;Constituencies&#39;, &#39;geometry&#39;, &#39;result&#39;,&#39;Year&#39;])
+
+# Initiating a Random Forest Classifier
+
+ada = AdaBoostClassifier(n\_estimators=100)
+
+#Fitting the Classifier to the training Data
+
+ada.fit(train,train\_ys)
+
+#Using the model to classify training data
+
+y\_train\_predictions = ada.predict(train)
+
+#Using the model to classify test data
+
+y\_predictions = ada.predict(test)
+
+print(classification\_report(test\_ys, y\_predictions, digits=5))
+
+precision,recall,fscore,support=precision\_recall\_fscore\_support(test\_ys, y\_predictions, average=&#39;macro&#39;)
+
+predbin = label\_binarize(y\_predictions,classes=[0,1,2,])
+
+y\_testbin = label\_binarize(test\_ys,classes=[0,1,2,])
+
+n\_classes = predbin.shape[1]
+
+fpr = dict()
+
+tpr = dict()
+
+roc\_auc = dict()
+
+for i in range(n\_classes):
+
+fpr[i], tpr[i], \_ = roc\_curve(y\_testbin[:, i], predbin[:, i])
+
+roc\_auc[i] = auc(fpr[i], tpr[i])
+
+fpr[&quot;micro&quot;], tpr[&quot;micro&quot;], \_ = roc\_curve(y\_testbin.ravel(), predbin.ravel())
+
+roc\_auc[&quot;micro&quot;] = auc(fpr[&quot;micro&quot;], tpr[&quot;micro&quot;])
+
+# First aggregate all false positive rates
+
+all\_fpr = np.unique(np.concatenate([fpr[i] for i in range(n\_classes)]))
+
+# Then interpolate all ROC curves at this points
+
+mean\_tpr = np.zeros\_like(all\_fpr)
+
+for i in range(n\_classes):
+
+mean\_tpr += interp(all\_fpr, fpr[i], tpr[i])
+
+# Finally average it and compute AUC
+
+mean\_tpr /= n\_classes
+
+fpr[&quot;macro&quot;] = all\_fpr
+
+tpr[&quot;macro&quot;] = mean\_tpr
+
+roc\_auc[&quot;macro&quot;] = auc(fpr[&quot;macro&quot;], tpr[&quot;macro&quot;])
+
+# Plot all ROC curves
+
+plt.figure()
+
+plt.plot(fpr[&quot;micro&quot;], tpr[&quot;micro&quot;],
+
+label=&#39;micro-average ROC curve (area = {0:0.2f})&#39;
+
+&#39;&#39;.format(roc\_auc[&quot;micro&quot;]),
+
+color=&#39;green&#39;, linestyle=&#39;:&#39;, linewidth=4)
+
+plt.plot(fpr[&quot;macro&quot;], tpr[&quot;macro&quot;],
+
+label=&#39;macro-average ROC curve (area = {0:0.2f})&#39;
+
+&#39;&#39;.format(roc\_auc[&quot;macro&quot;]),
+
+color=&#39;navy&#39;, linestyle=&#39;:&#39;, linewidth=4)
+
+colors = cycle([&#39;blue&#39;, &#39;orange&#39;, &#39;red&#39;])
+
+for i, color in zip(range(n\_classes), colors):
+
+plt.plot(fpr[i], tpr[i], color=color, linewidth=2,
+
+label=&#39;ROC curve of class {0} (area = {1:0.2f})&#39;
+
+&#39;&#39;.format(i, roc\_auc[i]))
+
+plt.plot([0, 1], [0, 1], &#39;k--&#39;, linewidth=2)
+
+plt.xlim([0.0, 1.0])
+
+plt.ylim([0.0, 1.05])
+
+plt.xlabel(&#39;False Positive Rate&#39;)
+
+plt.ylabel(&#39;True Positive Rate&#39;)
+
+plt.title(&#39;Receiver operating characteristic to multi-class &#39;)
+
+plt.legend(loc=&quot;lower right&quot;)
+
+plt.show()
+
+print(str(year)+&quot; Got training data accuracy of &quot; + str(accuracy\_score(y\_train\_predictions,train\_ys)))
+
+print(str(year)+&quot; Ada Boost achieved prediction accuracy &quot; + str(accuracy\_score(y\_predictions, test\_ys)))
+
+print(str(year)+&quot; Ada Boost achieved precision &quot; + str(precision))
+
+print(str(year)+&quot; Ada Boost achieved recall &quot; + str(recall))
+
+print(str(year)+&quot; Ada Boost achieved fscore &quot; + str(fscore))
+
+print(str(year)+&quot; Ada Boost achieved ROC AUC Score &quot;+ str(roc\_auc[&quot;macro&quot;]))
+
+print(&#39;\n&#39;)
+
+#Inserting the labels back into the training and test data dataframes
+
+original\_training\_data.insert(10,&quot;RandomForest &quot;+year,y\_train\_predictions)
+
+original\_test\_data.insert(10,&quot;RandomForest &quot;+year,y\_predictions)
+
+print(ConfusionMatrix(test\_ys, y\_predictions))
+
+print(&#39;\n&#39;)
+
+# Plotting the Random Forest Classifications and the Actual Results
+
+cmap = matplotlib.colors.LinearSegmentedColormap.from\_list(&quot;&quot;, [&#39;#0087DC&#39;,&#39;#FAA61A&#39;,&#39;#E4003B&#39;])
+
+original\_test\_data.plot(column=&#39;result&#39;, figsize=(20,10), cmap=cmap)
+
+plt.title(str(year) + &quot; Election Result&quot;, fontsize=18)
+
+original\_test\_data.plot(column=&#39;RandomForest &#39;+year, figsize=(20,10), cmap=cmap)
+
+plt.title(str(year) + &quot; Election Prediction&quot;, fontsize=18)
+
+#Working out which constituencies have been incorrectly classified.
+
+missclassified = []
+
+resultpredictions = original\_test\_data[&#39;RandomForest &#39;+year].values
+
+result = original\_test\_data[&#39;result&#39;].values
+
+for i in range(original\_test\_data.shape[0]):
+
+if(resultpredictions[i] == result[i]):
+
+missclassified.append(1)
+
+else:
+
+missclassified.append(0)
+
+original\_test\_data.insert(0,&quot;AccuratePrediction&quot;, missclassified)
+
+#Printing out which constituencies have been missclassified.
+
+constituencylist = original\_test\_data[&#39;Constituencies&#39;].values
+
+partylist = original\_test\_data[&#39;result&#39;].values
+
+print(str(year)+&quot; Incorrectly classified constituencies were:&quot;)
+
+for i in range(len(constituencylist)):
+
+if(missclassified[i]==0):
+
+print(constituencylist[i])
+
+cmap = matplotlib.colors.LinearSegmentedColormap.from\_list(&quot;&quot;, [&#39;red&#39;,&#39;green&#39;])
+
+# Plot to highlight which constituencies have been missclassified
+
+original\_test\_data.plot(column=&#39;AccuratePrediction&#39;, figsize=(20,10),cmap=cmap)
+
+plt.title(&quot;Map of incorrectly classified seats, &quot; + str(year), fontsize=18)
+
+plt.show()
+
+original\_test\_data[&#39;RandomForest &#39;+year] = le.inverse\_transform(original\_test\_data[&#39;RandomForest &#39;+year])
+
+return original\_test\_data[[&#39;Constituencies&#39;,&#39;RandomForest &#39;+year]].reset\_index(drop=True)
+
+# **Appendix F**
+
+# **Web Scraping and NLP**
+
+class Analysis:
+
+def run(self):
+
+headers = {
+
+&quot;User-Agent&quot;:
+
+&quot;Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36&quot;
+
+}
+
+#try DBScan
+
+response = requests.get(self.url, headers=headers)
+
+soup = BeautifulSoup(response.text, &#39;html.parser&#39;)
+
+headline\_results1 = soup.find\_all(&#39;div&#39;, class\_=&#39;JheGif nDgy9d&#39;)
+
+headline\_results = soup.find\_all(&#39;div&#39;, class\_=&#39;Y3v8qd&#39;)
+
+#open the spreadsheet we will write to
+
+with open(&#39;%s%s.csv&#39; % (self.term,self.start[-4:]), &#39;a&#39;) as file:
+
+w = csv.writer(file)
+
+for text1,text in zip(headline\_results1,headline\_results):
+
+blob1 = TextBlob(text1.get\_text())
+
+blob = TextBlob(text.get\_text())
+
+w.writerow([blob1+&#39;. &#39;+blob,&#39;%s&#39; % (self.start)])
+
+sia = SIA()
+
+results = []
+
+for text1,text in zip(headline\_results1,headline\_results):
+
+blob1 = TextBlob(text1.get\_text())
+
+blob = TextBlob(text.get\_text())
+
+blob\_all = blob1+&#39;. &#39;+blob
+
+pol\_score = sia.polarity\_scores(str(blob\_all))
+
+pol\_score[&#39;headline&#39;] = str(blob\_all)
+
+results.append(pol\_score)
+
+#write header row to spreadsheet
+
+dfr = pd.DataFrame.from\_records(results)
+
+self.sentiment = dfr[&quot;compound&quot;].mean()
+
+print(&#39;it is &#39;+str(self.sentiment))
+
+def \_\_init\_\_(self, term,start,end):
+
+self.term = term
+
+self.start = start
+
+self.end = end
+
+self.sentiment = 0
+
+self.subjectivity = 0
+
+self.url = &#39;https://www.google.com/search?tbs=cdr%3A1%2Ccd\_min%{1}%2Ccd\_max%{2}&amp;q={0}&amp;source=lnms&amp;tbm=nws&#39;.format(self.term,self.start,self.end)
